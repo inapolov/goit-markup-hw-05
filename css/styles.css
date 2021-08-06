@@ -81,6 +81,9 @@ img{
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -103,6 +106,9 @@ img{
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -332,7 +338,10 @@ color: var(--primery-white-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-color);  
+  color: var(--icon-color);
+  transition-property: color, background-color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .team-tumb .icon + .icon{
   margin-left: 10px;
@@ -345,6 +354,9 @@ color: var(--primery-white-color);
 .invite .social {
   color: var(--primery-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .invite .social:hover,
 .invite .social:focus{
@@ -379,6 +391,9 @@ justify-content: space-between;
   color: var(--icon-color);
   border: solid 1px var(--icon-color);
   border-radius: 4px;
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .item a:hover,
 .clients .item a:focus{
@@ -487,6 +502,9 @@ margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter .button:hover,
@@ -510,7 +528,10 @@ margin-bottom: 20px;
 }
 
 .card-hover{
-  display: block; 
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .card-hover:hover,
 .card-hover:focus{
@@ -568,6 +589,9 @@ margin-bottom: 20px;
   opacity: 0;
   transition: 250ms opacity linear;
 
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -589,6 +613,10 @@ color: var(--primery-white-color);
 
 opacity: 0;
 transition: 250ms opacity linear;
+
+transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-hover:hover .card-text{
@@ -632,8 +660,8 @@ opacity: 1;
   width: 30px;
   height: 30px;
 
-  border-radius: 50%;
-  border-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;  
 
   background-color: var(--primery-white-color);
 }
